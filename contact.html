@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Samuel Haynes Institute of Excellence</title>
+    <meta name="description" content="Get in touch with the Samuel Haynes Institute of Excellence.">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Samuel Haynes <span>Institute</span></a>
+                <div class="mobile-toggle">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="founders.html">Founders</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you. Reach out with any questions or inquiries.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p style="margin-bottom: 2rem;">
+                            Whether you're looking to volunteer, donate, or register a child for one of our programs,
+                            our team is here to assist you.
+                        </p>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>📍 Address:</strong><br>
+                            Belize City, Belize
+                            <br><span style="font-size: 0.9rem; color: var(--text-grey);">(Exact location
+                                placeholder)</span>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>📧 Email:</strong><br>
+                            <a href="mailto:info@samuelhaynes.org"
+                                style="color: var(--accent-color);">info@samuelhaynes.org</a>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>📞 Phone:</strong><br>
+                            <a href="tel:+5011234567" style="color: var(--accent-color);">+501 123-4567</a>
+                        </div>
+
+                        <!-- Placeholder Map -->
+                        <div
+                            style="width: 100%; height: 200px; background-color: #e0e0e0; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: #888;">
+                            Map Placeholder
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container bg-white"
+                        style="padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-form"
+                            onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required
+                                    placeholder="How can we help?"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Samuel Haynes Institute</h4>
+                    <p>Empowering youth and transforming communities through education and excellence.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founders.html">Founders</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="mailto:info@samuelhaynes.org">info@samuelhaynes.org</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Samuel Haynes Institute of Excellence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
