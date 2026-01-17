@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Samuel Haynes Institute of Excellence</title>
     <meta name="description" content="Get in touch with the Samuel Haynes Institute of Excellence.">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,8 +78,12 @@
                     <div class="contact-form-container bg-white"
                         style="padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
                         <h3>Send us a Message</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-grey); margin-bottom: 1rem;">
+                            Your privacy is important. This form uses your default mail client to send messages
+                            securely. No data is stored on this server.
+                        </p>
                         <form class="contact-form"
-                            onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                            onsubmit="event.preventDefault(); window.location.href = 'mailto:info@samuelhaynes.org?subject=Website Inquiry&body=' + encodeURIComponent(document.getElementById('message').value);">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="name" required placeholder="Your Name">
